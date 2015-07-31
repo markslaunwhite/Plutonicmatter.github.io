@@ -30,7 +30,7 @@ body, html {
 }
 
 a {
-  color: grey;
+  color: $lt-grey;
   text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ main {
   -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
   transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
-  color: grey;
+  color: $lt-grey;
 }
 // main h1, main p {
 //   text-align: center;
