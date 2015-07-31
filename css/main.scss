@@ -3,8 +3,7 @@
 ---
 
 
-@import "layout/navbar";
-@import "base";
+
 
 @charset "utf-8";
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
@@ -76,3 +75,6 @@ $navy: #243040;
 //         "syntax-highlighting",
 //         "layout/navbar";
 // ;
+
+@import "layout/navbar";
+@import "base";
