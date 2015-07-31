@@ -27,7 +27,7 @@ ul{
 
 // link items
 
-a, a:hover {
+a, a:hover, a:visited {
   text-decoration: none;
 }
 
@@ -100,11 +100,13 @@ background-image: url(../images/surf.jpg);
 Skills-contaier
 **********************************/
 
+
 .skill-container {
+  min-height: 60vh;
   hr {
     width: 50%;
   }
-  padding-top: 60px;
+  padding-top: 150px;
 }
 
 .skills-icon {
@@ -144,6 +146,11 @@ Contact-contaier
     border: solid $gold 3px;
     transition: background-color 0.5s ease;
     color: $black;
+}
+
+/* visited link */
+a:visited {
+    color: $lt-grey;
 }
 
 .icon { margin-bottom: 6rem;}
