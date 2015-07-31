@@ -1,31 +1,56 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
+
+@import "layout/navbar";
+@import "base";
+
 @charset "utf-8";
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+$base-font: "Open Sans", "Helvetica", "sans-serif";
+$header-font: "Montserrat", "sans-serif";
+
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
+$secondary-font: 'Crimson Text',  Georgia, serif, "Times New Roman", Times, serif;
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+$title-font: 'Lato', sans-serif;
 
 
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
 
-$spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// my colors
+$body-bg: #fff;
+$black: #1D1E22;
+$white: #fff;
+$lt-grey: rgb(200,200,200);
+$dk-grey: #484745;
+$gold: rgb(159,145,98);
+$navy: #243040;
+// // Our variables
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// $spacing-unit:     30px;
 
-// Width of the content area
-$content-width:    800px;
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
 
 
 
@@ -34,19 +59,20 @@ $on-laptop:        800px;
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;
+// //     }
+// // }
+// @mixin media-query($device) {
+//     @media screen and (max-width: $device) {
+//         @content;
 //     }
 // }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+// @import
+//         "base",
+//         "layout",
+//         "syntax-highlighting",
+//         "layout/navbar";
+// ;

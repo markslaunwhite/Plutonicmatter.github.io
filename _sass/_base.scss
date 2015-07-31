@@ -1,204 +1,202 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+$shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow1:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+// /**********************************
+// All page styles
+// **********************************/
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// size can't go beyond 100vw
+body {  width: 100vw;
+}
+
+//no bullet points on ul
+ul{
+  list-style-type: none;
+  padding:0px;
+}
+
+// link items
+
+a, a:hover {
+  text-decoration: none;
+}
+
+hr {
+  border-color: $gold;
+}
+
+
+h3{
+  font-family: $secondary-font;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-style:italic;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+
+
+  font-size: 5em; /* 40px/16=2.5em */
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: white;
+  // line-height: 90px;
+  // color: $gold;
+  text-shadow: $shadow1;
+
+}
+
+
+@media only screen
+  and (max-width: 992px){
+ h1 {
+    font-size: 4em;
+  }
+}
+
+@media only screen
+  and (max-width: 768px){
+ h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen
+  and (max-width: 480px){
+ h1 {
+    font-size: 2em;
+  }
+}
+
+
+// /**********************************
+// Intro-section
+// **********************************/
+
+#intro-section{
+background-image: url(../images/surf.jpg);
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  min-height: 500px;
+
+}
+
+
+/**********************************
+Skills-contaier
+**********************************/
+
+.skill-container {
+  hr {
+    width: 50%;
+  }
+  padding-top: 60px;
+}
+
+.skills-icon {
+  img {
+  height: 70px;
+  width: 70px;
+  }
 }
 
 
 
-/**
- * Basic styling
- */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+
+/**********************************
+Contact-contaier
+**********************************/
+
+.contact-title hr{
+    // height: 4px;
+    height: 2em;
+    width: 50%;
+  }
+
+.contact-icons{
+  margin-bottom: 5%;
 }
 
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+.contact-icons i {
+  border: solid $gold 3px;
+  border-radius: 50%;
+  display: inline;
+  padding:2rem;
 }
 
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
+.contact-icons i:hover {
+     transition: background-color 0.5s ease;
+    background-color:$gold;
+    border: solid $gold 3px;
+    transition: background-color 0.5s ease;
+    color: $black;
 }
 
+.icon { margin-bottom: 6rem;}
 
 
-/**
- * Figures
- */
-figure > img {
-    display: block;
+/* --------------------------------
+Main layout components
+--------------------------------*/
+.cd-section {
+  min-height: 100%;
+  position: relative;
+  // padding: 2em 0;
+  padding:100px 0;
 }
 
-figcaption {
-    font-size: $small-font-size;
+main {
+   background-image: url(../images/diagonal_waves.png);
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: scroll;
 }
 
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
+.cd-section-home:nth-of-type(odd) {
+      min-height: 70vh;
+}
+.cd-section {
+  color: $lt-grey;
 }
 
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+.cd-section .section-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 768px;
+  text-align: center;
 }
 
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+ #project-section img {
+  width: 100%;
+  max-width: 400px;
 }
 
-
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
-}
-
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+#project-section img:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);  /* For Webkit browsers */
+  filter: gray;  /* For IE 6 - 9 */
+  -webkit-transition: all .6s ease;  /* Transition for Webkit browsers */
 }
