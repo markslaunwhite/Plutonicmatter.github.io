@@ -1,0 +1,78 @@
+#about-section {
+  height: 110%;
+  background-image: url(../images/diagonal_waves.png);
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: scroll;
+
+  p, h2 {
+    color: $gold;
+    padding-top: 5%;
+  }
+    p {
+      // position: absolute;
+      left: 10%;
+      right: 10%;
+      padding:10%;
+}
+}
+
+
+#about-section img{
+  width: 90%;
+  height: 100vh;
+}
+
+
+
+
+
+
+#type-animation{
+
+  left:10%;
+
+h1{
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  // animation: type 8s steps(60, end);
+  padding-left: 35%;
+
+}
+
+//allows for delay to type
+h1:nth-child(2){
+  // animation: type2 10s steps(60, end);
+}
+
+h1:nth-child(3){
+  animation: type2 10s steps(60, end);
+}
+
+//make the key finder blink
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+ }
