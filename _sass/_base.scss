@@ -1,3 +1,6 @@
+// This stylesheet is to set any items that every style will inherit from
+
+
 // /**********************************
 // All page styles
 // **********************************/
@@ -39,4 +42,7 @@ h1, h2, h3, h4, h5 {
   font-family: $header-font;
 }
 
+p {
+ font-family: $base-font;
+}
 

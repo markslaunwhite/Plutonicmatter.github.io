@@ -29,6 +29,10 @@ $navy: #243040;
 //         "layout/navbar";
 // ;
 @import "reset-css";
-@import "layout/navbar";
-@import "pages/about";
 @import "base";
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/about";
+
