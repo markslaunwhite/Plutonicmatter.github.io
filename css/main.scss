@@ -1,26 +1,19 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
-
 @charset "utf-8";
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Montserrat", "sans-serif";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
-$secondary-font: 'Crimson Text',  Georgia, serif, "Times New Roman", Times, serif;
-
-
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
-$title-font: 'Lato', sans-serif;
+$base-font:'Roboto', sans-serif;
+$header-font: 'Montserrat', sans-serif;
 
 
 
 
 
 // my colors
-$body-bg: #fff;
+$body-bg: #FAFAFA;
 $black: #1D1E22;
 $white: #fff;
 $lt-grey: rgb(200,200,200);
