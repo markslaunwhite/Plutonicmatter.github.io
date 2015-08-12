@@ -1,59 +1,23 @@
+// This is for the font h1 position
 .cd-intro {
   width: 100%;
-  max-width: 768px;
-  // text-align: center;
-  height: 90vh;
+  height: 80vh;
 }
-
-
 
 .cd-intro {
-  margin: 30vh auto;
+  padding-top: 15em;
       width: 100%;
+      @media only screen and (min-width: 768px) {
+      padding-top: 20em;
+  }
 }
-// @media only screen and (min-width: 768px) {
-//   .cd-intro {
-//     margin: 10em auto;
-//     width: 60%;
 
-// }
-// @media only screen and (min-width: 1170px) {
-//   .cd-intro {
-//     margin: 10em auto;
-//     width: 70%;
-//   }
-// }
-
-.wrapper {
-  padding-left:15%;
-}
 .cd-headline {
-  font-size: 7vw;
-  max-size: 70%;
-  line-height: 1.2;
-
+  font-size: 8vw;
+  @media only screen and (min-width: 768px) {
+    font-size: 8vw;
+  }
 }
-// @media only screen and (min-width: 768px) {
-
-//   }
-
-// @media only screen and (min-width: 768px) {
-//   .cd-headline {
-//     font-size: 4.4rem;
-//     font-weight: 300;
-//   }
-// }
-// @media only screen and (min-width: @screen-lg-min) {
-//   .cd-headline {
-//     font-size: 6rem;
-//   }
-// }
-
-
-
-
-
-
 
 .cd-words-wrapper {
   display: inline-block;
