@@ -28,6 +28,10 @@ $dk-grey: #484745;
 $gold: rgb(159,145,98);
 $navy: #243040;
 
+
+$shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 // @import
 //         "base",
@@ -37,7 +41,9 @@ $navy: #243040;
 // ;
 @import "reset-css";
 @import "base";
+@import "layout/preloader";
 @import "layout/navbar";
+
 @import "layout/header";
 @import "layout/footer";
 

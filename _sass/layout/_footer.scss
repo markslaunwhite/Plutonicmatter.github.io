@@ -24,10 +24,11 @@ footer .row {
 }
 
 footer a {
-  border: solid $black 2px;
+  border: solid $black 1px;
   border-radius: 50%;
   padding: 8px;
   -webkit-transition: padding .6s;
+  box-shadow: $shadow1;
 
 }
 
@@ -38,9 +39,8 @@ footer a {
   a:hover {
 
     border: transparent;
-      padding: 16px;
-      opacity:0.8;
-
+    padding: 16px;
+    box-shadow: $shadow2;
   }
 }
 

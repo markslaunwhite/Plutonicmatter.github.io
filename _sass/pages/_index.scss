@@ -1,15 +1,8 @@
 // This is for the font h1 position
 .cd-intro {
   width: 100%;
-  height: 80vh;
-}
+  height: 90vh;
 
-.cd-intro {
-  padding-top: 15em;
-      width: 100%;
-      @media only screen and (min-width: 768px) {
-      padding-top: 20em;
-  }
 }
 
 .cd-headline {
@@ -220,4 +213,34 @@ xrotate-2
     -o-transform: translateZ(-20px) rotateX(-90deg);
     transform: translateZ(-20px) rotateX(-90deg);
   }
+}
+
+
+
+
+/******************************
+
+******************************/
+
+.skills i {
+  font-size: 40px;
+  padding: 40px;
+  margin: 5%;
+  width:3em;
+  border-radius:100%;
+  box-shadow: $shadow1;
+}
+
+.skill1 i {
+  background-color:$yellow;
+
+}
+
+.skill2 i {
+  background-color:$red;
+
+}
+.skill3 i {
+  background-color:$blue;
+
 }
