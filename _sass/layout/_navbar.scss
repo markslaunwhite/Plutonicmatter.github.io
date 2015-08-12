@@ -12,6 +12,9 @@ LOGO
 ****************************/
 #logo {
   margin: 16px auto 0px auto;
+  font-size: 40px;
+  font-weight: 400;
+
 }
 
 /****************************
@@ -25,6 +28,7 @@ NAV BAR LINKS
     line-height: 48px;
     display: inline;
     text-align: center;
+    overflow: visible;
   }
 }
 
@@ -33,21 +37,21 @@ NAV BAR LINKS
 #site-nav {
   .two:hover ~ hr {
     margin-left: 33.3%;
-    background: tomato;
+    background: $red;
 
   }
 
   .three:hover ~ hr {
     margin-left: 66.6%;
-     background: blue;
+     background: $blue;
   }
 
   hr {
     height: .25rem;
     width: 33.3%;
     margin: 0;
-    background: #FFD600;
+    background: $yellow;
     border: none;
-    transition: .4s ease-in-out;
+    transition: .3s ease-in-out;
   }
 }

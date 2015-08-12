@@ -1,5 +1,5 @@
 footer {
-  position: absolute;
+
   right: 0;
   bottom: 0;
   left: 0;
@@ -12,6 +12,54 @@ footer {
 .copyright {
   font-weight: 100;
   font-size: 14px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
+footer .row {
+  line-height: 100px;
+
+}
+
+footer a {
+  border: solid $black 2px;
+  border-radius: 50%;
+  padding: 8px;
+  -webkit-transition: padding .6s;
+
+}
+
+
+// Social media related
+
+.contact-icons {
+  a:hover {
+
+    border: transparent;
+      padding: 16px;
+      opacity:0.8;
+
+  }
+}
+
+
+.contact-icons {
+  .icon1 a:hover {
+    background-color: $yellow;
+  }
+  .icon2 a:hover,
+  .icon3 a:hover {
+
+    background-color: $red;
+
+  }
+  .icon4 a:hover {
+
+    background-color: $blue;
+
+  }
 }
 
 

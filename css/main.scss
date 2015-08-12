@@ -16,6 +16,13 @@ $header-font: 'Montserrat', sans-serif;
 $body-bg: #FAFAFA;
 $black: #1D1E22;
 $white: #fff;
+$blue: #2196F3;
+$red: #F44336;
+$yellow: #FFEB3B;
+
+
+
+
 $lt-grey: rgb(200,200,200);
 $dk-grey: #484745;
 $gold: rgb(159,145,98);
@@ -35,4 +42,5 @@ $navy: #243040;
 @import "layout/footer";
 
 @import "pages/about";
+@import "pages/index";
 
