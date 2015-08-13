@@ -3,9 +3,9 @@ $(function() {
     $(".bounce").hide(0).delay(3000).fadeIn(1000).show(0);
 
 window.onscroll = function() {
-        if (window.pageYOffset >= 100){
+        if (window.pageYOffset >= 10){
             $('.bounce').fadeOut(500).hide(0);
-        } else if (window.pageYOffset <= 100){
+        } else if (window.pageYOffset <= 10){
             $('.bounce').fadeIn(500).show(0);
         }
     }
