@@ -1,15 +1,13 @@
 // This is for the font h1 position
 .cd-intro {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  margin-top: 20vh;
 
 }
 
 .cd-headline {
   font-size: 8vw;
-  @media only screen and (min-width: 768px) {
-    font-size: 8vw;
-  }
 }
 
 .cd-words-wrapper {
@@ -35,8 +33,9 @@
 }
 
 .arrow-scroll  {
-  position: fixed;
-bottom:100px;
+  // position: fixed;
+// bottom:100px;
+padding-top: 100px;
   font-size:2em;
   i {
     text-shadow:$shadow1;
