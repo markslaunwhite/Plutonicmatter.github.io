@@ -283,14 +283,11 @@ xrotate-2
 ******************************/
 .skills {
   margin:0;
-@media (min-width: @screen-xs-min) {
+@media (min-width: 768px) {
   margin:20vh;
 }
 
 }
- .cd-section {
-  border: 1px dashed deeppink;
- }
 
 .skills i {
   font-size: 40px;
