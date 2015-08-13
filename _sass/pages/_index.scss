@@ -1,7 +1,7 @@
 // This is for the font h1 position
 .cd-intro {
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
 
 }
 
@@ -34,16 +34,30 @@
   opacity: 1;
 }
 
-.arrow-scroll i {
-  position: relative;
+.arrow-scroll  {
+  position: fixed;
+bottom:100px;
   font-size:2em;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translateX(-50%) translateY(500%);
-  -moz-transform: translateX(-50%) translateY(500%);
-  // -ms-transform: translateX(-50%) translateY(500%);
-  // -o-transform: translateX(-50%) translateY(500%);
-  // transform: translateX(-50%) translateY(500%);
+  i {
+    text-shadow:$shadow1;
+    color:$black;
+  }
+}
+
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+.bounce {
+  animation-name: bounce;
 }
 
 /* --------------------------------

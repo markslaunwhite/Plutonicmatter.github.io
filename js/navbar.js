@@ -1,3 +1,18 @@
+$(function() {
+    // $(".bounce").delay(4000).fadeIn(500);
+    $(".bounce").hide(0).delay(3000).fadeIn(1000).show(0);
+
+window.onscroll = function() {
+        if (window.pageYOffset >= 100){
+            $('.bounce').fadeOut(500).hide(0);
+        } else if (window.pageYOffset <= 100){
+            $('.bounce').fadeIn(500).show(0);
+        }
+    }
+});
+
+
+
 jQuery(document).ready(function($){
   //set animation timing
   var animationDelay = 2500,
@@ -141,6 +156,5 @@ jQuery(document).ready(function($){
     $newWord.removeClass('is-hidden').addClass('is-visible');
   }
 });
-
 
 
