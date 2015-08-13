@@ -34,19 +34,21 @@
 
 .arrow-scroll  {
 padding-top: 10%;
-  font-size:2em;
+  font-size:2rem;
+  color:$black;
+
   i {
     text-shadow:$shadow1;
-    color:$black;
+
   }
 }
 
 
 
 .animated {
-  -webkit-animation-duration: 2.5s;
-  -moz-animation-duration: 2.5s;
-  animation-duration: 2.5s;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -55,6 +57,7 @@ padding-top: 10%;
   -moz-animation-name: bounce;
   animation-name: bounce;
 
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
@@ -281,6 +284,17 @@ xrotate-2
 /******************************
 
 ******************************/
+
+
+
+.about-me {
+margin-top: 30vh;
+}
+
+
+/******************************
+
+******************************/
 .skills {
   margin:0;
 @media (min-width: 768px) {
@@ -294,7 +308,7 @@ xrotate-2
   padding: 40px;
   margin: 5%;
   width:3em;
-  border-radius:100%;
+  border-radius:50%;
   box-shadow: $shadow1;
 }
 
