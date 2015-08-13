@@ -1,24 +1,38 @@
 $(function() {
     // $(".bounce").delay(4000).fadeIn(500);
-    $(".bounce").hide(0).delay(5000).fadeIn(1000).show(0);
+
 
 window.onscroll = function() {
-        if (window.pageYOffset >= 10){
+
+    }
+
+$(".bounce").hide(0).delay(5000).fadeIn(1000).show(0);
+$("#nav-bar").hide(0);
+$("#mail-icon").hide(0);
+
+window.onscroll = function() {
+if (window.pageYOffset >= 200){
             $('.bounce').fadeOut(500).hide(0);
         } else if (window.pageYOffset <= 10){
             $('.bounce').fadeIn(500).show(0);
         }
-    }
 
 
-$("#nav-bar").hide(0)
-
-window.onscroll = function() {
-        if (window.pageYOffset >= 100){
+        if (window.pageYOffset >= 300){
             $('#nav-bar').fadeIn(500).show(0);
-        } else if (window.pageYOffset <= 100){
+        } else if (window.pageYOffset <= 200){
             $('#nav-bar').fadeOut(500).hide(0);
         }
+
+
+    if (window.pageYOffset >= 400){
+            $('#mail-icon').fadeIn(500).show(0);
+        // } else if (window.pageYOffset <= 10){
+        //     $('#mail-icon').fadeOut(500).hide(0);
+        }
+
+
+
     }
 
 });
@@ -29,6 +43,9 @@ window.onscroll = function() {
 
 
 jQuery(document).ready(function($){
+
+
+
   //set animation timing
   var animationDelay = 2500,
     //loading bar effect
