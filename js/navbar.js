@@ -1,3 +1,5 @@
+
+jQuery(document).ready(function($){
 // $(function() {
 //     // $(".bounce").delay(4000).fadeIn(500);
 
@@ -80,7 +82,7 @@ if(scrollPercent > navBarTargetPercentage) {
 });
 
 
-jQuery(document).ready(function($){
+
 
 
 
