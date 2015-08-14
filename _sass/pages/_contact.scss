@@ -139,5 +139,7 @@ textarea:focus ~ .highlight {
 
 .btn-send h4:hover {
   box-shadow: $shadow2;
+   -webkit-transition: box-shadow 0.25s, -webkit-transform 0.25s;
+    transition:box-shadow 0.25s;
 
 }

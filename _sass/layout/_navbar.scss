@@ -56,3 +56,11 @@ NAV BAR LINKS
 
   }
 }
+
+//hides last name on mobile screen
+@media (max-width: 768px) {
+#last-name {
+  display:none;
+
+  }
+}
