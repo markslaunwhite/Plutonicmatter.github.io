@@ -1,8 +1,8 @@
 
 jQuery(document).ready(function($){
   $("#mail-icon").hide(0);
-  $(".bounce").hide(0).delay(5000).fadeIn(1000).show(0);
-  $("#nav-bar").hide(0);
+  $(".bounce").hide(0).delay(4000).fadeIn(1000).show(0);
+
 
   var onContactPage = function(){
 
@@ -42,9 +42,8 @@ jQuery(document).ready(function($){
         $('.bounce').fadeIn(500).show(0)
       }
 
-      if(scrollPercent > navBarTargetPercentage) {
-        $('#nav-bar').fadeIn(500).show(0)
-      }
+      $("#nav-bar").hide(0).delay(5000).fadeIn(1000).show(0);
+
     }).trigger('scroll');
 }
 }
