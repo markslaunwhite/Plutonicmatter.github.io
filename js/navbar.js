@@ -12,6 +12,10 @@ jQuery(document).ready(function($){
 // $("#nav-bar").hide(0);
 // $("#mail-icon").hide(0);
 
+
+
+
+
 // window.onscroll = function() {
 // if (window.pageYOffset >= 200){
 //             $('.bounce').fadeOut(500).hide(0);
@@ -73,6 +77,12 @@ if(scrollPercent > navBarTargetPercentage) {
   }
 
 }).trigger('scroll');
+
+
+$('input, text-area').on('click', function(){
+  $("#mail-icon").fadeOut(500).hide(0);
+});
+
 });
 
 
