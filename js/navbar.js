@@ -38,9 +38,15 @@
 // });
 $(function() {
   $("#mail-icon").hide(0);
+  $(".bounce").hide(0).delay(5000).fadeIn(1000).show(0);
+  $("#nav-bar").hide(0);
+
     $(window).scroll(function() {
 
-var mailTargetPercentage = 10;
+    var mailTargetPercentage = 10;
+    var arrowTargetPercentage = 5;
+    var navBarTargetPercentage = 5;
+
     scrollTo = $(window).scrollTop(),
     docHeight = $(document).height(),
     windowHeight = $(window).height();
@@ -58,6 +64,16 @@ if(scrollPercent > mailTargetPercentage) {
   $('#mail-icon').fadeIn(500).show(0)
   }else if (scrollPercent < mailTargetPercentage) {
   $('#mail-icon').fadeOut(500).hide(0);
+  }
+
+if(scrollPercent > arrowTargetPercentage) {
+  $('.bounce').fadeIn(500).show(0)
+  }
+
+if(scrollPercent > navBarTargetPercentage) {
+  $('#nav-bar').fadeIn(500).show(0)
+  }else if (scrollPercent < mailTargetPercentage) {
+  $('#nav-bar').fadeOut(500).hide(0);
   }
 
 }).trigger('scroll');
