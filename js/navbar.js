@@ -1,7 +1,5 @@
 
 jQuery(document).ready(function($){
-  $("#mail-icon").hide(0);
-  $(".bounce").hide(0).delay(4000).fadeIn(1000).show(0);
 
 
   var onContactPage = function(){
@@ -16,12 +14,16 @@ jQuery(document).ready(function($){
     $('#nav-bar').css("position", "absolute").show(0);
     $('#mail-icon').hide(0);
   } else {
+    $("#nav-bar").hide(0).delay(5000).fadeIn(1000).show(0);
+    $("#mail-icon").hide(0);
+    $(".bounce").hide(0).delay(4000).fadeIn(1000).show(0);
+
     $(window).scroll(function () {
 
       // set the percentage to activate fade in
       var mailTargetPercentage = 15;
       var arrowTargetPercentage = 5;
-      var navBarTargetPercentage = 5;
+
 
       // checks doc height
       scrollTo = $(window).scrollTop(),
@@ -42,7 +44,7 @@ jQuery(document).ready(function($){
         $('.bounce').fadeIn(500).show(0)
       }
 
-      $("#nav-bar").hide(0).delay(5000).fadeIn(1000).show(0);
+
 
     }).trigger('scroll');
 }
