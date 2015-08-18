@@ -16,8 +16,8 @@ $header-font: 'Montserrat', sans-serif;
 $body-bg: #FAFAFA;
 $black: #1D1E22;
 $white: #fff;
-$blue: #446CB3;
-$red: #D64541;
+$blue: rgba(19, 82, 162, 1);
+$red: #EF504E;
 $yellow: #F9BF3B;
 
 
@@ -31,6 +31,7 @@ $navy: #243040;
 
 $shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 $shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 // @import
@@ -49,5 +50,6 @@ $shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 @import "pages/about";
 @import "pages/contact";
+@import "pages/work";
 @import "pages/index";
 
