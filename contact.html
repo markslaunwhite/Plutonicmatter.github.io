@@ -5,46 +5,52 @@ overview: true
 ---
 
 <div id="contact-page">
-
-
+  <div id="container">
     <h2> Say Hello </h2>
     <div class="row">
-      <form>
-
+      <form action="http://formspree.io/you@email.com">
         <div class="col-xs-12">
           <div class="group">
-            <input type="text" required>
+            <input type="text" name="name">
             <span class="highlight"></span>
             <span class="bar"></span>
             <label><h5>NAME</h5></label>
           </div>
         </div>
-
         <div class="col-xs-12">
           <div class="group">
-            <input type="text" required>
+            <input type="email" name="_replyto">
             <span class="highlight"></span>
             <span class="bar"></span>
             <label><h5>EMAIL</h5></label>
           </div>
         </div>
-
         <div class="col-xs-12">
           <div class="group">
-            <textarea type="text" required></textarea>
+            <textarea name="body"></textarea>
             <span class="highlight"></span>
             <span class="bar"></span>
             <label><h5>MESSAGE</h5></label>
           </div>
         </div>
-
       </form>
-  </div>
-      <div class="text-center">
-       <div class="btn-send ">
-          <h4>SEND</h4>
-        </div>
+    </div>
+    <div class="text-center">
+      <div class="btn-send ">
+        <input type="submit" value="Send">
       </div>
     </div>
-
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+

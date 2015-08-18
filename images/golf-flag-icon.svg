@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle 1 + Rectangle 2 Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="75" cy="75" r="75"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-25.000000, -25.000000)">
+            <g id="Triangle-1-+-Rectangle-2-Mask" sketch:type="MSLayerGroup" transform="translate(25.000000, 25.000000)">
+                <mask id="mask-2" sketch:name="Mask" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#0D3B93" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <path d="M104,52.4267579 L103.367042,43.5972864 L28.4938896,53.9863298 L104,115.129972 L104,150 L171,99 L171,75 L104,24 L104,52.4267579 Z" id="Triangle-2" fill-opacity="0.25" fill="#140101" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M39.3663184,75.3259458 C39.3663182,57.734046 46.3382221,50.2477092 52.936288,43.0407696 C68.7837215,25.7309248 62.2277799,16.5323629 62.2277799,16.5323629 C62.2277799,16.5323629 76.6810379,19.7539225 71.950808,45.3784236 C70.3571178,54.0117282 69.4148262,55.5555837 74.5073184,69.7649673 C79.5998105,83.9743508 89.5939534,94.607409 89.5939534,94.607409 L35.0635416,98.9357314 C35.0635416,98.9357314 39.3663187,92.9178457 39.3663184,75.3259458 Z" id="Triangle-1" fill="#EF504E" sketch:type="MSShapeGroup" mask="url(#mask-2)">
+                    <g transform="translate(62.328748, 57.734047) rotate(-89.000000) translate(-62.328748, -57.734047) "></g>
+                </path>
+                <rect id="Rectangle-2" stroke="#000000" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="100" y="24" width="4" height="132" rx="8"></rect>
+                <text id="18" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Lovelo" font-size="24" font-weight="686" fill="#F8F4F4">
+                    <tspan x="68" y="71">18</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
