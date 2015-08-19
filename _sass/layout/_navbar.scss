@@ -35,6 +35,11 @@ NAV BAR LINKS
 
 // Navbar Animation
 #site-nav {
+  .one:hover ~ hr {
+    margin-left: 0%;
+    background: $yellow;
+  }
+
   .two:hover ~ hr {
     margin-left: 33.3%;
     background: $red;
@@ -50,7 +55,7 @@ NAV BAR LINKS
     height: .25rem;
     width: 33.3%;
     margin: 0;
-    background: $yellow;
+    // background: $yellow;
     border: none;
     transition: .3s ease-in-out;
 

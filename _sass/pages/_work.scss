@@ -3,6 +3,19 @@
    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.12));
    padding:auto;
 
+   -webkit-transition: all 2s ease;
+      -moz-transition: all 2s ease;
+      -o-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+      transition: all 2s ease;
+}
+
+.project-icon img:hover {
+  filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
 }
 
 .card {
@@ -10,4 +23,11 @@
   padding: 5%;
   box-shadow: $shadow1;
   border-radius: 2px;
+  margin: 5%;
+
+  h2 {
+    font-weight: 900;
+    font-size: 24px;
+  }
 }
+

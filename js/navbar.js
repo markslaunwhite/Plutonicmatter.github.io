@@ -1,12 +1,13 @@
 
 jQuery(document).ready(function($){
 
-
+var currentPage = window.location.pathname;
+var contactPage = "/contact.html";
   var onContactPage = function(){
 
   // these are to locate the current page name you are on
-  var currentPage = window.location.pathname;
-  var contactPage = "/contact.html";
+
+
 
 // place the nav bar at the top of page to ensure it does not conflict with form
 // don't show the mail button
@@ -54,6 +55,15 @@ jQuery(document).ready(function($){
 
 
 
+
+// var pageSelect = function(){
+//   if (currentPage === contactPage) {
+//     $('#site-nav hr').css("margin-left", "33.33%");
+//     console.log("yo");
+//   }
+// }
+
+// pageSelect();
 
 
 });
